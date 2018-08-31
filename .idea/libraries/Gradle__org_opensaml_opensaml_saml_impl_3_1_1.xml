@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="Gradle: org.opensaml:opensaml-saml-impl:3.1.1">
-    <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.opensaml/opensaml-saml-impl/3.1.1/2d2ad57af6123af47df93b38f449b5cb19e374f2/opensaml-saml-impl-3.1.1.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

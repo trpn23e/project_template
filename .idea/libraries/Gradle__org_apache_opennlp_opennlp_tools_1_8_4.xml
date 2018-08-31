@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="Gradle: org.apache.opennlp:opennlp-tools:1.8.4">
-    <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.opennlp/opennlp-tools/1.8.4/dc1dd0bfdee4a4bc98924180da5a8e61b3a50bdd/opennlp-tools-1.8.4.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="Gradle: org.springframework.data:spring-data-solr:3.0.6.RELEASE">
-    <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-solr/3.0.6.RELEASE/a659a6b62d7f71c3300fe8d57962e7ca4929245b/spring-data-solr-3.0.6.RELEASE.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
