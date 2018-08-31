@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="net.pis.dao.NewContractMapper">
+
+
+	<resultMap id="NewContractResultMap" type="net.pis.dto.DemoDTO">
+        <result property="id"		                column="CTR_SEQ" />
+        <result property="contractNumber"		    column="CTR_NO" />
+        <result property="smartContractAddress"		column="CTR_ADR" />
+        <result property="transactionId"		    column="TX_ID" />
+        <result property="contractStatus"		    column="CTR_STAT" />
+        <result property="transferStatus"		    column="TRN_STAT" />
+        <result property="ownerAddress"			    column="OWN_ADR" />
+        <result property="senderAddress"			column="SND_ADR" />
+        <result property="receiverAddress"			column="RCV_ADR" />
+        <result property="senderBrokerAddress"	    column="BRK_SND_ADR" />
+        <result property="receiverBrokerAddress"    column="BRK_RCV_ADR" />
+        <result property="ownerName"		        column="OWN_NM" />
+        <result property="senderName"		        column="SND_NM" />
+        <result property="receiverName"		        column="RCV_NM" />
+        <result property="senderBrokerName"		    column="BRK_SND_NM" />
+        <result property="receiverBrokerName"		column="BRK_RCV_NM" />
+        <result property="contractFileName"			column="CTR_FILE_NM" />
+        <result property="contractFileHash"		    column="CTR_FILE_HASH" />
+        <result property="contractFileLink"		    column="CTR_FILE_LINK" />
+        <result property="finalContractFileHash"    column="CTR_FIN_FILE_HASH" />
+        <result property="finalContractFileLink"    column="CTR_FIN_FILE_LINK" />
+        <result property="addtionalFileGroupId"		column="ETC_FILE_GRP_ID" />
+        <result property="creationDatetime"		    column="CDATE" />
+        <result property="updatedDatetime"		    column="UDATE" />
+        <result property="sentDatetime"		        column="SDATE" />
+        <result property="receptionDatetime"	    column="RDATE" />
+        <result property="creationUserId"		    column="CUSR_ID" />
+        <result property="updatedUserId"		    column="UUSR_ID" />
+	</resultMap>
+
+
+
+    <select id="read" resultMap="NewContractResultMap">
+        SELECT
+                CTR_SEQ,
+                CTR_NO,
+                CTR_ADR,
+                TX_ID,
+                CTR_STAT,
+                TRN_STAT,
+                OWN_ADR,
+                SND_ADR,
+                RCV_ADR,
+                BRK_SND_ADR,
+                BRK_RCV_ADR,
+                OWN_NM,
+                SND_NM,
+                RCV_NM,
+                BRK_SND_NM,
+                BRK_RCV_NM,
+                CTR_FILE_NM,
+                CTR_FILE_HASH,
+                CTR_FILE_LINK,
+                CTR_FIN_FILE_HASH,
+                CTR_FIN_FILE_LINK,
+                ETC_FILE_GRP_ID,
+                CDATE,
+                UDATE,
+                SDATE,
+                RDATE,
+                CUSR_ID,
+                UUSR_ID
+        FROM DEMO_TBL
+        where ctr_seq between 1 and 1
+    </select>
+
+
+
+</mapper>

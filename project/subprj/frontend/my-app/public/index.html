@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="No-Cache">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>예제</title>
+    <!-- 실제로는 webpack에서 설정된 대로 빌드된 css를 읽도록 되있음 -->
+    <link crossOrigin="anonymous" href="resources/css/bundle.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root">
+    </div>
+    <!--
+      실제로는 webpack에서 설정된 대로 빌드된 js를 읽도록 되있음 
+      webpack으로 빌드시 HtmlWebpackPlugin에서 자동으로 넣어주므로 선언할 필요없다
+      npm start시에도 자동으로 넣어줌(경로는 webpack으로 빌드시와 다르다..)
+      splitChunks등의 webpack 4 optimization옵션등으로 chunk가 여러개 생겨있을경우에도
+      ManifestPlugin 에 정의된 bundle 파일명(hash포함)을 통해 자동으로 셋팅됨
+    -->
+    <!-- <script defer src="bundle.js"></script> -->
+  </body>
+</html>

@@ -1,0 +1,20 @@
+allprojects {
+
+    apply plugin: 'java'
+
+    group = 'net.pis'
+    version = '0.0.1-SNAPSHOT'
+
+
+    sourceCompatibility = '1.8'
+    targetCompatibility = '1.8'
+    [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+
+
+    repositories {
+        mavenCentral()
+        maven { url "https://plugins.gradle.org/m2/"}
+//        maven { url "http://192.168.100.229:8081/repository/maven-public" }
+    }
+}

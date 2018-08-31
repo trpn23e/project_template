@@ -1,0 +1,2 @@
+rootProject.name = 'home'
+include 'project', 'project:subprj'
