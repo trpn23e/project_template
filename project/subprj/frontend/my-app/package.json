@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^1.5.1",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "axios-progress-bar": "^1.2.0",
     "babel-plugin-transform-es2015-modules-strip": "^0.1.1",
     "babel-polyfill": "^6.26.0",
